@@ -1,0 +1,153 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(
+    circle at top,
+    #1e3a8a 0%,      /* cold blue */
+    #0f172a 40%,     /* deep navy */
+    #7c2d12 70%,     /* dark ember red */
+    #450a0a 100%     /* deep fire red */
+  );
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #020617, #1e293b);
+}
+
+header h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+section {
+  padding: 40px 60px;
+}
+
+h2 {
+  border-bottom: 2px solid #38bdf8;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.intro, .mechanism, .safety {
+  max-width: 900px;
+}
+
+.mechanism ol {
+  padding-left: 20px;
+}
+
+.disciplines {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #020617;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.split-section {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.split-main {
+  flex: 3;
+}
+
+.split-side {
+  flex: 1;
+  background: rgba(2, 6, 23, 0.6);
+  border-radius: 14px;
+  padding: 18px;
+  font-size: 0.95em;
+  box-shadow: inset 0 0 0 1px rgba(56,189,248,0.2);
+}
+
+.split-side h4 {
+  margin-top: 0;
+  color: #38bdf8;
+}
+
+.meme {
+  margin-top: 10px;
+  padding: 12px;
+  background: rgba(56,189,248,0.15);
+  border-radius: 10px;
+  font-style: italic;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;   /* 👈 THIS sets main axis horizontal */
+  align-items: center;
+  gap: 12px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  display: block;
+  padding: 10px 18px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 6px;
+
+  text-decoration: none;
+  color: #e5e7eb;
+  font-weight: 500;
+
+  transition: background 0.25s ease, transform 0.15s ease;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 👈 LEFT vs FULL RIGHT */
+
+  padding: 14px 32px;
+  max-width: 1200px;
+  margin: 20px auto 0;
+
+  background: linear-gradient(
+    135deg,
+    rgba(30,58,138,0.9),
+    rgba(2,6,23,0.9)
+  );
+  border-radius: 16px;
+}
+
+.fun-img {
+  width: 100%;
+  margin-top: 12px;
+  border-radius: 10px;
+}
